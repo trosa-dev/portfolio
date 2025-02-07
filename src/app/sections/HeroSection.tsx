@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Terminal, Database, Server, Cloud } from "lucide-react";
+import { Terminal, Cloud } from "lucide-react";
 
 const HeroSection = () => {
 	return (
@@ -41,13 +41,13 @@ const HeroSection = () => {
 						<h1 className="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl font-mono">
 							<span className="block text-green-500  mb-3 text-lg sm:text-2xl md:text-3xl">{`{ `}</span>
 							<span className="block whitespace-nowrap pl-4 text-lg sm:text-3xl md:text-4xl lg:text-6xl">
-								"name": "Thiago Rosa",
+								&quot;name&quot;: &quot;Thiago Rosa&quot;,
 							</span>
 							<span className="block whitespace-nowrap pl-4 text-lg sm:text-3xl md:text-4xl lg:text-6xl">
-								"role": "Backend Developer",
+								&quot;role&quot;: &quot;Backend Developer&quot;,
 							</span>
 							<span className="block whitespace-nowrap pl-4 text-lg sm:text-3xl md:text-4xl lg:text-6xl">
-								"status": "Available for Projects"
+								&quot;status&quot;: &quot;Available for Projects&quot;
 							</span>
 							<span className="block text-green-500 text-lg sm:text-2xl md:text-3xl">{` }`}</span>
 						</h1>
