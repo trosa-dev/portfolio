@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Project, ProjectsSectionProps } from "../../types";
 import { projects } from "../../projects";
+import defaultProjectImage from "../../assets/projects/default.jpg";
 
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 	selectedTechs = [],
@@ -17,8 +18,11 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 	}, [selectedTechs]);
 
 	return (
-		<div className="bg-gray-950 py-16" id="Projects">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div className="relative py-16" id="Projects">
+			{/* Gradient Background */}
+			<div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-950 to-black" />
+
+			<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -48,15 +52,15 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 									ease: "easeOut",
 								}}
 								layout
-								className="bg-gray-900/80 rounded-lg overflow-hidden border border-gray-800 hover:border-green-500 transition-all duration-300"
+								className="bg-gradient-to-br from-gray-900 via-gray-900/90 to-gray-900/80 rounded-lg overflow-hidden border border-gray-800 hover:border-green-500 transition-all duration-300 backdrop-blur-sm"
 							>
 								<motion.img
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
 									transition={{ delay: index * 0.1 + 0.2 }}
-									src={project.image}
+									src={project.image ?? defaultProjectImage.src}
 									alt={project.title}
-									className="w-full h-48 object-cover"
+									className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
 								/>
 								<div className="p-6">
 									<h3 className="text-xl font-bold text-white font-mono mb-2">
