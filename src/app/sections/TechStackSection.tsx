@@ -26,13 +26,21 @@ const TechStackSection: React.FC<TechStackProps> = ({ onTechSelect }) => {
 
 	const handleTechClick = (tech: string): void => {
 		const newSelected = new Set(selectedTechs);
+
 		if (newSelected.has(tech)) {
 			newSelected.delete(tech);
 		} else {
 			newSelected.add(tech);
 		}
+
 		setSelectedTechs(newSelected);
 		onTechSelect(Array.from(newSelected));
+
+		// Rola para a seção com o ID "TechStacks" caso ela exista
+		const techStackElement = document.getElementById("TechStacks");
+		if (techStackElement) {
+			techStackElement.scrollIntoView({ behavior: "smooth" });
+		}
 	};
 
 	return (
