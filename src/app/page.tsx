@@ -1,5 +1,6 @@
 "use client";
 
+import FooterSection from "./sections/FooterSection";
 import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import TechStackSection from "./sections/TechStackSection";
@@ -15,7 +16,7 @@ export default function Home() {
 				<TechStackSection onTechSelect={setSelectedTechs} />
 				<ProjectsSection selectedTechs={selectedTechs} />
 			</main>
-			<footer></footer>
+			<FooterSection />
 		</>
 	);
 }
