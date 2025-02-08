@@ -26,7 +26,7 @@ const HeroSection = () => {
 			<div className="absolute right-0 top-0 bottom-0 w-1/2 lg:w-2/5">
 				<div className="absolute inset-0 bg-gradient-to-l from-gray-900 via-gray-900/90 to-transparent z-10" />
 				<div
-					className="absolute inset-0 bg-[url('/api/placeholder/800/1200')] bg-right bg-no-repeat bg-contain opacity-50"
+					className="absolute inset-0 bg-right bg-no-repeat bg-contain opacity-50"
 					style={{ clipPath: "polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
 				/>
 			</div>
@@ -38,7 +38,7 @@ const HeroSection = () => {
 						<div className="flex items-center space-x-2 text-green-500 mb-4">
 							<Terminal size={24} />
 							<code className="text-sm font-mono">
-								~/trosa-backend-portfolio $
+								~/portfolio $
 							</code>
 						</div>
 
