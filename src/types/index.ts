@@ -11,7 +11,7 @@ export interface Project {
 	techs: string[];
 	github: string;
 	live: string;
-	image: string;
+	image?: string;
 }
 
 export interface TechStackProps {
