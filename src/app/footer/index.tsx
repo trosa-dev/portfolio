@@ -1,9 +1,16 @@
 "use client";
 
 import React from "react";
-import { Github, Linkedin, Mail, ArrowRight, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+	const phone = "5551991525157";
+	const message = "Hello! I'm interested in your work.";
+	const whatsAppUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(
+		message
+	)}`;
+
 	return (
 		<footer className="bg-gray-950 text-gray-300">
 			{/* Main Footer Content */}
@@ -23,7 +30,7 @@ const Footer = () => {
 							>
 								<Github size={20} />
 							</a>
-							<a 
+							<a
 								href="https://www.linkedin.com/in/rosa-thiago/"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -73,12 +80,15 @@ const Footer = () => {
 								</a>
 							</li>
 							<li className="flex items-center">
-								<Phone size={16} className="mr-2" />
+								<FaWhatsapp size={16} className="mr-2 text-green-500" />{" "}
+								{/* Ícone do WhatsApp colorido */}
 								<a
-									href="tel:+1234567890"
+									href={whatsAppUrl}
+									target="_blank"
+									rel="noopener noreferrer"
 									className="text-gray-400 hover:text-white transition-colors"
 								>
-									+55 (51) 991.525.157
+									WhatsApp
 								</a>
 							</li>
 						</ul>

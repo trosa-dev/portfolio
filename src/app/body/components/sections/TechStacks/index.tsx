@@ -1,7 +1,7 @@
 // TechStack.tsx
 import React, { useState } from "react";
 import { Terminal, Database, Server } from "lucide-react";
-import { Technology, TechStackProps } from "../../types";
+import { Technology, TechStackProps } from "../../../../../types";
 
 const TechStackSection: React.FC<TechStackProps> = ({ onTechSelect }) => {
 	const [selectedTechs, setSelectedTechs] = useState<Set<string>>(new Set());

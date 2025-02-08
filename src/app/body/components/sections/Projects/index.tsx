@@ -3,9 +3,9 @@
 import React, { useMemo } from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Project, ProjectsSectionProps } from "../../types";
-import { projects } from "../../projects";
-import defaultProjectImage from "../../assets/projects/default.jpg";
+import defaultProjectImage from "../../../../../assets/projects/default.jpg";
+import { Project, ProjectsSectionProps } from "../../../../../types";
+import { projects } from "../../../../../projects";
 
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 	selectedTechs = [],
