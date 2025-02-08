@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Terminal, Cloud } from "lucide-react";
+import { Terminal } from "lucide-react";
 import Link from "next/link";
 
 const HeroSection = () => {
