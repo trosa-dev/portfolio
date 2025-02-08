@@ -5,7 +5,7 @@ import { Terminal, Cloud } from "lucide-react";
 
 const HeroSection = () => {
 	return (
-		<div className="relative min-h-screen overflow-hidden bg-gray-950">
+		<div className="relative min-h-screen overflow-hidden bg-gray-950" id="Hero">
 			{/* Animated background gradient */}
 			<div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
 				<div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTIxMjEyIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20 animate-[pulse_8s_ease-in-out_infinite]" />

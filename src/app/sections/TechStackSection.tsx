@@ -36,11 +36,11 @@ const TechStackSection: React.FC<TechStackProps> = ({ onTechSelect }) => {
 	};
 
 	return (
-		<div className="bg-gray-950 py-16">
+		<div className="bg-gray-950 py-16" id="TechStacks">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center mb-12">
 					<h2 className="text-3xl font-bold text-white font-mono mb-4">
-						Tech Stack
+						Tech Stacks
 					</h2>
 					<p className="text-gray-400 font-mono">
 						Select technologies to filter projects
