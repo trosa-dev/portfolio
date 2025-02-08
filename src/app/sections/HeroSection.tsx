@@ -2,10 +2,14 @@
 
 import React from "react";
 import { Terminal, Cloud } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
 	return (
-		<div className="relative min-h-screen overflow-hidden bg-gray-950" id="Hero">
+		<div
+			className="relative min-h-screen overflow-hidden bg-gray-950"
+			id="Hero"
+		>
 			{/* Animated background gradient */}
 			<div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
 				<div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTIxMjEyIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20 animate-[pulse_8s_ease-in-out_infinite]" />
@@ -57,28 +61,14 @@ const HeroSection = () => {
 							high-performance API development.
 						</p>
 
-						{/* Tech Stack */}
-						<div className="mt-8 flex flex-wrap gap-3">
-							{["Node.js", "PostgreSQL", "Docker"].map((tech) => (
-								<span
-									key={tech}
-									className="px-3 py-1.5 rounded-md bg-gray-900/80 text-gray-300 font-mono text-sm border border-gray-800 hover:border-green-500 transition-colors"
-								>
-									{tech}
-								</span>
-							))}
-						</div>
-
-						{/* CTA Section */}
+						{/* CTA Projects Section */}
 						<div className="mt-10 flex flex-col sm:flex-row gap-4">
-							<button className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-mono rounded hover:bg-green-700 transition-colors">
-								<Terminal className="mr-2" size={20} />
-								View Projects
-							</button>
-							<button className="inline-flex items-center px-6 py-3 bg-gray-900/80 border border-green-500 text-green-500 font-mono rounded hover:bg-green-500/10 transition-colors">
-								<Cloud className="mr-2" size={20} />
-								API Docs
-							</button>
+							<Link href="#Projects" scroll={true}>
+								<button className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-mono rounded hover:bg-green-700 transition-colors">
+									<Terminal className="mr-2" size={20} />
+									View Projects
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>
