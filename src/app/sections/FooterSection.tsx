@@ -16,13 +16,17 @@ const Footer = () => {
 						<div className="flex space-x-4">
 							<a
 								href="https://github.com/trosa-dev"
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-gray-400 hover:text-white transition-colors"
 								aria-label="Github"
 							>
 								<Github size={20} />
 							</a>
-							<a
+							<a 
 								href="https://www.linkedin.com/in/rosa-thiago/"
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-gray-400 hover:text-white transition-colors"
 								aria-label="LinkedIn"
 							>
